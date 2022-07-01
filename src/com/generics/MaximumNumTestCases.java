@@ -92,4 +92,13 @@ class MaximumNumTestCases {
 			assertEquals(expectedOutput, actualOutput);
 		}
 		
+		//Tc3.1
+		@Test
+		void testForStringThirddPosition() {
+			MaximumNum maximumNum = new MaximumNum();
+			String expectedOutput = maximumNum.getMaximumString("Banana", "Apple", "Peach");
+			String actualOutput = "Peach";
+			assertEquals(expectedOutput, actualOutput);
+		}
+		
 }
