@@ -8,7 +8,8 @@ import org.junit.jupiter.api.Test;
  * Ensure the test data has Max Integer in the Third position
  * 
  * Ensure the test data has Max Float in the First position
- * Ensure the test data has Max Float in the First position
+ * Ensure the test data has Max Float in the Second position
+ * Ensure the test data has Max Float in the Third position
  * 
  * */
 
@@ -55,6 +56,15 @@ class MaximumNumTestCases {
 			MaximumNum maximumNum = new MaximumNum();
 			Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 1245f);
 			Float actualOutput = 6783f;
+			assertEquals(expectedOutput, actualOutput);
+		}
+		
+		//Tc2.3
+		@Test
+		void testForFloatThirdPosition() {
+			MaximumNum maximumNum = new MaximumNum();
+			Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 51245f);
+			Float actualOutput = 51245f;
 			assertEquals(expectedOutput, actualOutput);
 		}
 		
