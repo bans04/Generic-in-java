@@ -11,6 +11,10 @@ import org.junit.jupiter.api.Test;
  * Ensure the test data has Max Float in the Second position
  * Ensure the test data has Max Float in the Third position
  * 
+ * Ensure the test data has Max String in the Third position
+ * 
+ * @ Dnyandeo Bansode
+ * 
  * */
 
 class MaximumNumTestCases {
@@ -65,6 +69,15 @@ class MaximumNumTestCases {
 			MaximumNum maximumNum = new MaximumNum();
 			Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 51245f);
 			Float actualOutput = 51245f;
+			assertEquals(expectedOutput, actualOutput);
+		}
+		
+		//Tc3.1
+		@Test
+		void testForStringFirstdPosition() {
+			MaximumNum maximumNum = new MaximumNum();
+			String expectedOutput = maximumNum.getMaximumString("Peach", "Apple", "Banana");
+			String actualOutput = "Peach";
 			assertEquals(expectedOutput, actualOutput);
 		}
 		
