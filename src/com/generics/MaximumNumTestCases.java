@@ -24,7 +24,8 @@ class MaximumNumTestCases {
 	@Test
 	void testForFirstPosition() {
 		MaximumNum maximumNum = new MaximumNum();
-		Integer expectedOutput = maximumNum.getMaximumInteger(4534, 783, 12);
+		//Integer expectedOutput = maximumNum.getMaximumInteger(4534, 783, 12);
+		Integer expectedOutput = maximumNum.getMaximum(4534, 783, 12);
 		Integer actualOutput = 4534;
 		assertEquals(expectedOutput, actualOutput);
 	}
@@ -33,7 +34,8 @@ class MaximumNumTestCases {
 	@Test
 	void testForSecondePosition() {
 		MaximumNum maximumNum = new MaximumNum();
-		Integer expectedOutput = maximumNum.getMaximumInteger(45, 783, 12);
+		//Integer expectedOutput = maximumNum.getMaximumInteger(45, 783, 12);
+		Integer expectedOutput = maximumNum.getMaximum(45, 783, 12);
 		Integer actualOutput = 783;
 		assertEquals(expectedOutput, actualOutput);
 	}
@@ -42,7 +44,8 @@ class MaximumNumTestCases {
 	@Test
 	void test() {
 		MaximumNum maximumNum = new MaximumNum();
-		Integer expectedOutput = maximumNum.getMaximumInteger(45, 783, 1245);
+		//Integer expectedOutput = maximumNum.getMaximumInteger(45, 783, 1245);
+		Integer expectedOutput = maximumNum.getMaximum(45, 783, 1245);
 		Integer actualOutput = 1245;
 		assertEquals(expectedOutput, actualOutput);
 	}
@@ -51,7 +54,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForFloatFirstPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			Float expectedOutput = maximumNum.getMaximumFloat(454f, 234f, 343f);
+			//Float expectedOutput = maximumNum.getMaximumFloat(454f, 234f, 343f);
+			Float expectedOutput = maximumNum.getMaximum(454f, 234f, 343f);
 			Float actualOutput = (float) 454;
 			assertEquals(expectedOutput, actualOutput);
 		}
@@ -60,7 +64,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForFloatSecondPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 1245f);
+			//Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 1245f);
+			Float expectedOutput = maximumNum.getMaximum(45f, 6783f, 1245f);
 			Float actualOutput = 6783f;
 			assertEquals(expectedOutput, actualOutput);
 		}
@@ -69,7 +74,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForFloatThirdPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 51245f);
+			//Float expectedOutput = maximumNum.getMaximumFloat(45f, 6783f, 51245f);
+			Float expectedOutput = maximumNum.getMaximum(45f, 6783f, 51245f);
 			Float actualOutput = 51245f;
 			assertEquals(expectedOutput, actualOutput);
 		}
@@ -78,7 +84,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForStringFirstdPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			String expectedOutput = maximumNum.getMaximumString("Peach", "Apple", "Banana");
+			//String expectedOutput = maximumNum.getMaximumString("Peach", "Apple", "Banana");
+			String expectedOutput = maximumNum.getMaximum("Peach", "Apple", "Banana");
 			String actualOutput = "Peach";
 			assertEquals(expectedOutput, actualOutput);
 		}
@@ -87,7 +94,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForStringSeconddPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			String expectedOutput = maximumNum.getMaximumString("Apple", "Peach", "Banana");
+			//String expectedOutput = maximumNum.getMaximumString("Apple", "Peach", "Banana");
+			String expectedOutput = maximumNum.getMaximum("Apple", "Peach", "Banana");
 			String actualOutput = "Peach";
 			assertEquals(expectedOutput, actualOutput);
 		}
@@ -96,7 +104,8 @@ class MaximumNumTestCases {
 		@Test
 		void testForStringThirddPosition() {
 			MaximumNum maximumNum = new MaximumNum();
-			String expectedOutput = maximumNum.getMaximumString("Banana", "Apple", "Peach");
+			//String expectedOutput = maximumNum.getMaximumString("Banana", "Apple", "Peach");
+			String expectedOutput = maximumNum.getMaximum("Banana", "Apple", "Peach");
 			String actualOutput = "Peach";
 			assertEquals(expectedOutput, actualOutput);
 		}
